@@ -1,4 +1,4 @@
-package springstarthere.ch12_ex2.model;
+package springstarthere.ch12_ex3.model;
 
 //import java.time.LocalDateTime;
 

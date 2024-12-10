@@ -1,4 +1,4 @@
-package springstarthere.ch12_ex2.controllers;
+package springstarthere.ch12_ex3.controllers;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import springstarthere.ch12_ex2.model.Purchase;
-import springstarthere.ch12_ex2.repositories.PurchaseRepository;
+import springstarthere.ch12_ex3.model.Purchase;
+import springstarthere.ch12_ex3.repositories.PurchaseRepository;
 
 @RestController
 @RequestMapping(path = "/purchase")

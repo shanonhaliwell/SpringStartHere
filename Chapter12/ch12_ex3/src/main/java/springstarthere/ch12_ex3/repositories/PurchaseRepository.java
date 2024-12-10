@@ -1,4 +1,4 @@
-package springstarthere.ch12_ex2.repositories;
+package springstarthere.ch12_ex3.repositories;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import springstarthere.ch12_ex2.model.Purchase;
+import springstarthere.ch12_ex3.model.Purchase;
 
 @Repository
 public class PurchaseRepository {
