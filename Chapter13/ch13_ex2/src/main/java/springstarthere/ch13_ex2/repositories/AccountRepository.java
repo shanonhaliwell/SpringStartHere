@@ -1,4 +1,4 @@
-package springstarthere.ch13_ex1.repositories;
+package springstarthere.ch13_ex2.repositories;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import springstarthere.ch13_ex1.model.Account;
-import springstarthere.ch13_ex1.repositories.mappers.AccountRowMapper;
+import springstarthere.ch13_ex2.model.Account;
+import springstarthere.ch13_ex2.repositories.mappers.AccountRowMapper;
 
 @Repository
 public class AccountRepository {
