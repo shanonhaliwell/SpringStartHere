@@ -32,17 +32,17 @@ public class TransferService {
         this.accountRepository.changeAmount(idSender, senderNewAmount);
         this.accountRepository.changeAmount(idReceiver, receiverNewAmount);
 
-        System.out.println("Transfer Amount " + transferedAmount + " from Sender Account ID " + sender.getID() + " of " + sender.getName() + 
-                                    " to Receiver Account ID " + receiver.getID() + " of " + receiver.getName() + " completed.");
+        System.out.println("Transfer Amount " + transferedAmount + " from Sender Account ID " + sender.getID() + " of " + 
+                    sender.getName() + " to Receiver Account ID " + receiver.getID() + " of " + receiver.getName() + " completed.");
 
     }
 
 
     public List<Account> getAllAccounts() {
 
-        System.out.println("Returning all Accounts");
+        System.out.println("Returning all Accounts from Database");
+
         return this.accountRepository.findAllAccounts();
-    }
-    
+    }   
 
 }

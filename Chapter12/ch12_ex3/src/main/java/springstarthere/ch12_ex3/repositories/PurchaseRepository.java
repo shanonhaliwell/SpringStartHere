@@ -55,6 +55,9 @@ public class PurchaseRepository {
 
         // Executes the SQL query and maps each row to a Purchase object using the RowMapper, returning the list of purchases.
         List<Purchase> purchases = this.jdbc.query(sql, purchaseRowMapper);
+
+        System.out.println("Returning Purchase from Database");
+        
         return purchases;
         //return this.jdbc.query(sql, purchaseRowMapper);
 

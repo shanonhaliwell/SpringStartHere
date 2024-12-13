@@ -1,4 +1,4 @@
-package springstarthere.ch13_ex2.services;
+package springstarthere.ch13_ex3.services;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import springstarthere.ch13_ex2.model.Account;
-import springstarthere.ch13_ex2.repositories.AccountRepository;
+import springstarthere.ch13_ex3.model.Account;
+import springstarthere.ch13_ex3.repositories.AccountRepository;
 
 @Service
 public class TransferService {
@@ -34,11 +34,11 @@ public class TransferService {
 
         
         // Triggering THROWBACK
-        throw new RuntimeException("Oh no! Something went wrong!");
+        //throw new RuntimeException("Oh no! Something went wrong!");
         
         
-        //System.out.println("Transfer Amount " + transferedAmount + " from Sender Account ID " + sender.getID() + " of " + 
-        //            sender.getName() + " to Receiver Account ID " + receiver.getID() + " of " + receiver.getName() + " completed.");
+        System.out.println("Transfer Amount " + transferedAmount + " from Sender Account ID " + sender.getID() + " of " + 
+                    sender.getName() + " to Receiver Account ID " + receiver.getID() + " of " + receiver.getName() + " completed.");
 
     }
 

@@ -1,4 +1,4 @@
-package springstarthere.ch13_ex1.controllers;
+package springstarthere.ch13_ex3.controllers;
 
 import java.util.List;
 
@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import springstarthere.ch13_ex1.dto.TransferRequest;
-import springstarthere.ch13_ex1.model.Account;
-import springstarthere.ch13_ex1.services.TransferService;
+import springstarthere.ch13_ex3.dto.TransferRequest;
+import springstarthere.ch13_ex3.model.Account;
+import springstarthere.ch13_ex3.services.TransferService;
 
 @RestController
 public class AccountController {

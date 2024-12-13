@@ -28,6 +28,8 @@ public class PurchaseRepository {
         // executes the SQL query using the JdbcTemplate's update method, passing the product and price values from the Purchase object.
         this.jdbc.update(sql, purchase.getProduct(), purchase.getPrice());
 
+        System.out.println("Inserting Purchase record product name " + purchase.getProduct() + " succcessfully");
+        
     }
 
     // This method retrieves all purchases from the database and returns them as a list of Purchase objects.
@@ -53,6 +55,9 @@ public class PurchaseRepository {
 
         // Executes the SQL query and maps each row to a Purchase object using the RowMapper, returning the list of purchases.
         List<Purchase> purchases = this.jdbc.query(sql, purchaseRowMapper);
+
+        System.out.println("Returning Purchase from Database");
+        
         return purchases;
         //return this.jdbc.query(sql, purchaseRowMapper);
 

@@ -25,13 +25,13 @@ public class AccountController {
     public void transferMoney (@RequestBody TransferRequest request) {
 
         this.transferService.transferMoney(request.getSenderAccountId(), request.getReceiverAccountId(), request.getAmount());
-
     }
+
 
     @GetMapping(path = "/accounts")
     public List<Account> getAllaAccounts() {
+        
         return this.transferService.getAllAccounts();
     }
-
 
 }
